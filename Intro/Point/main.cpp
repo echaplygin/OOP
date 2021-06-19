@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -45,7 +45,7 @@ void main()
 
 	cout << A.x << tab << A.y << endl;
 
-	Point* pA = &A; //Îáúÿâëÿåì óêàçàòåëü íà Point è áåðåì àäðåñ òî÷êè 'A'
+	Point* pA = &A; //ÐžÐ±ÑŠÑÐ²Ð»ÑÐµÐ¼ ÑƒÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ Ð½Ð° Point Ð¸ Ð±ÐµÑ€ÐµÐ¼ Ð°Ð´Ñ€ÐµÑ Ñ‚Ð¾Ñ‡ÐºÐ¸ 'A'
 	cout << pA->x << tab << pA->y << endl;
 	cout << (*pA).x << tab << (*pA).y << endl;
 #endif // STRUCT_POINT
