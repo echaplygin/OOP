@@ -1,11 +1,11 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 class Fraction
 {
-	int integer;            // Целая часть
-	int numerator;          // Числитель
-	int denominator;        //Знаменатель
+	int integer;            // Р¦РµР»Р°СЏ С‡Р°СЃС‚СЊ
+	int numerator;          // Р§РёСЃР»РёС‚РµР»СЊ
+	int denominator;        //Р—РЅР°РјРµРЅР°С‚РµР»СЊ
 public:
 	int get_integer()const
 	{
@@ -30,7 +30,7 @@ public:
 
 	void set_denominator(int denominator)
 	{
-		if (denominator == 0)denominator = 1; // Фильрация данных
+		if (denominator == 0)denominator = 1; // Р¤РёР»СЊСЂР°С†РёСЏ РґР°РЅРЅС‹С…
 		this->denominator = denominator;
 	}
 	//Constructors:
@@ -95,7 +95,7 @@ public:
 	}
 	Fraction& operator++(int) //Postfix (Suffix) increment
 	{
-		Fraction old = *this; //Сохраняем старое значение. CopyConstructor
+		Fraction old = *this; //РЎРѕС…СЂР°РЅСЏРµРј СЃС‚Р°СЂРѕРµ Р·РЅР°С‡РµРЅРёРµ. CopyConstructor
 		integer++;
 		return old; //CopyConstructor
 	}
@@ -137,7 +137,7 @@ Fraction operator*(Fraction left, Fraction right)
 		left.get_denominator() * right.get_denominator()
 	);
 	return result;*/
-	return Fraction //Здесь мы явно вызываем конструктор, который создает временный безымянный объект с нужным нам результатом.
+	return Fraction //Р—РґРµСЃСЊ РјС‹ СЏРІРЅРѕ РІС‹Р·С‹РІР°РµРј РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РєРѕС‚РѕСЂС‹Р№ СЃРѕР·РґР°РµС‚ РІСЂРµРјРµРЅРЅС‹Р№ Р±РµР·С‹РјСЏРЅРЅС‹Р№ РѕР±СЉРµРєС‚ СЃ РЅСѓР¶РЅС‹Рј РЅР°Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј.
 	(
 		left.get_numerator() * right.get_numerator(),
 		left.get_denominator() * right.get_denominator()
