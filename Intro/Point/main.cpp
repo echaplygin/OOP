@@ -8,7 +8,7 @@ using std::endl;
 #define tab "\t"
 #define delimiter "\n------------------------------------------------------------------------\n"
 
-
+//#define CONSTRUCTOR_OVERLOADING
 
 
 class Point
@@ -33,6 +33,8 @@ public:
 	{
 		this->y = y;
 	}
+
+#ifdef CONSTRUCTOR_OVERLOADING
 	//                 Constructors:
 	Point() 
 	{
@@ -47,7 +49,9 @@ public:
 		this->y = 0;
 		cout << "SigleArgumentConstructor:\t" << this << endl;
 	}
-	Point(double x, double y)
+#endif // CONSTRUCTOR_OVERLOADING
+
+	Point(double x=0, double y=0)
 	{
 		//с двумя параметрами
 		this->x = x;
@@ -108,7 +112,7 @@ double distance(const Point& A, const Point& B)
 	return distance;
 }
 
-#define DISTANCE_CHEK
+//#define DISTANCE_CHEK
 //#define CONSTRACTOR_CHEK
 //#define ASSIGNMENT_CHEK
 

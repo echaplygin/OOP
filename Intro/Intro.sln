@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Intro", "Intro\Intro.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Point", "Point\Point.vcxproj", "{93F56B8A-7C74-4828-A916-E62CF1D6C757}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fraction", "Fraction\Fraction.vcxproj", "{F3A2890B-3583-4505-95AD-2D832952932C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{93F56B8A-7C74-4828-A916-E62CF1D6C757}.Release|x64.Build.0 = Release|x64
 		{93F56B8A-7C74-4828-A916-E62CF1D6C757}.Release|x86.ActiveCfg = Release|Win32
 		{93F56B8A-7C74-4828-A916-E62CF1D6C757}.Release|x86.Build.0 = Release|Win32
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Debug|x64.ActiveCfg = Debug|x64
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Debug|x64.Build.0 = Debug|x64
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Debug|x86.Build.0 = Debug|Win32
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Release|x64.ActiveCfg = Release|x64
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Release|x64.Build.0 = Release|x64
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Release|x86.ActiveCfg = Release|Win32
+		{F3A2890B-3583-4505-95AD-2D832952932C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
